@@ -1,0 +1,14 @@
+<h2>Cadastrar Novo Cliente</h2>
+<form class="row g-3">
+  <div class="">
+    <label for="nome">Nome</label>
+    <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="cliente.nome">
+  </div>
+  <div class="">
+    <label for="endereco">Endereço</label>
+    <input type="text" class="form-control" id="endereco" name="endereco" [(ngModel)]="cliente.endereco">
+  </div>
+  <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3" (click)="cadastrar()">Cadastrar</button>
+  </div>
+</form>
